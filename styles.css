@@ -578,5 +578,21 @@ stroke-miterlimit: 15;
   margin: 0 auto;
   padding: 0 var(--padding-mobile);
   }
+  .info{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_info{
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .communicate{
+    align-items: center;
+  }
+  .features .container{
+    width: 390px;
+  }
 }
 
