@@ -24,3 +24,30 @@ const nav = document.querySelector('.nav');
 menuToggle.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
+
+// Отправка email в Telegram
+const TOKEN = "7693676561:AAHvd_2qzVe4QmMULLlakgdY4A-zjFnOcDU";      
+const CHAT_ID = "1984897886";      
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const email = formData.get('email');
+
+  const url = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+  const message = encodeURIComponent(`Новая почта с сайта: ${email}`);
+
+  try {
+    const res = await fetch(`${url}?chat_id=${CHAT_ID}&text=${message}`);
+    if(res.ok){
+      alert('Email отправлен в Telegram!');
+      form.reset();
+    } else {
+      alert('Ошибка при отправке');
+    }
+  } catch(err) {
+    console.error(err);
+    alert('Ошибка при отправке');
+  }
+});
