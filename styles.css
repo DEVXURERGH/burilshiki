@@ -604,25 +604,52 @@ stroke-miterlimit: 15;
     flex-direction: column;
   }
 
+  .feature{
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+
+  .feature img{  
+    width: 323px;
+    height: 162px;
+  }
+
+  .solution{
+    height: 900px;
+  }
+
   .solution h2 {
-    margin-bottom: 15px;
     font-family: var(--font-heading);
     font-weight: 900;
     text-align: center;
     color: var(--color-accent);
-    font-size: 1rem;
+    font-size: 2rem;
   }
+
+  .solution .like{
+    margin-bottom: 100px;
+  }
+
   .solution p{ 
-    font-size: 0.7rem;
+    margin-top: 20px;
+    font-size: 1.3rem;
     text-indent: 0;
     text-align: center;
     color: var(--color-text-bglight);
     font-weight: 700;
   }
   
+  .solution .contact-form {
+    color: var(--color-text-bgdark);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding: 30px 30px;
+    height: 320px;
+  }
   .solution .contact-form h2 {
     color: var(--color-text-bgdark);
     font-size: 1.2rem;
+    margin-bottom: 10px;
   }
 
   .contact-form input[type="email"]::placeholder {
@@ -635,7 +662,7 @@ stroke-miterlimit: 15;
   font-weight: 700;
   width: 100%;
   padding: 18px 20px;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   border-radius: 12px;
   border: 3px solid var(--color-accent);
   outline: none;
@@ -644,7 +671,9 @@ stroke-miterlimit: 15;
   color: (--color-text-bglight);
   text-align: center;
   }
-
+  #toast {
+    font-size: 1.1rem;
+  }
   .footer_info{
     flex-direction: column;
     gap: 12px;
