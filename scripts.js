@@ -26,7 +26,7 @@ menuToggle.addEventListener('click', () => {
 });
 
 // Отправка email в Telegram
-const TOKEN = "7693676561:AAHvd_2qzVe4QmMULLlakgdY4A-zjFnOcDU";      
+const TOKEN = "";      
 const CHAT_ID = "1984897886";      
 
 form.addEventListener('submit', async (e) => {
